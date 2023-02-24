@@ -1,0 +1,5 @@
+name: ArtemisMina
+version: '${version}'
+main: me.dkz.plugin.artemismina.ArtemisMina
+commands:
+  mina:

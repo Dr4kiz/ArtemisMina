@@ -1,0 +1,52 @@
+Teleport:
+  Range: 10 # Blocos a partir do spawn do mundo
+  CountDown: 15 # Delay para usar o comando
+  CountDownMessage: "&eAguarde @delay segundos para ir minerar."
+  Permission: "nminas.teleport" # Permissão para o comando
+  PermissionMessage: "&cVocê não tem permissão para isso."
+
+Mining:
+
+  # Nome do mundo de mineração
+  WorldName: "mina"
+  # Tipo de geração de minérios: NORMAL, AROUND ou DROP
+  # NORMAL: Minérios serão gerados normalmente
+  # AROUND: Minérios serão gerados ao redor do bloco
+  OreGeneration: "AROUND"
+  # Efeitos quer serão aplicados aos jogadores
+  # [Nome do Efeito, Nível]
+  Effects:
+    - "FAST_DIGGING, 3"
+    - "NIGHT_VISION, 3"
+  Ores:
+    # [Minério, Camada(Y), Chance(%)]
+    - "GOLD_ORE, 20, 16"
+    - "IRON_ORE, 58, 35"
+    - "COAL_ORE, 60, 40"
+    - "EMERALD_ORE, 12, 8"
+    - "DIAMOND_ORE, 12, 9"
+    - "REDSTONE_ORE, 13, 15"
+    - "LAPIS_ORE, 30, 13"
+  Rules:
+    DropStone: false # Se true, as pedras serão dropadas
+    Damage: false # Se true, jogadores poderão sofrer dano
+    MobSpawn: true # Se true, mobs poderão nascer
+    Weather: false # Se true, o clima mudará
+    Time: false # Se true, o ciclo do dia será ativado
+
+Messages:
+  WorldEnter:
+    - " "
+    - " &7Bem-vindo ao mundo de mineração"
+    - " &7Use o comando &a/mina sair &7para sair do mundo."
+    - " &cPvP &7e &cDano &7 estão desativados nesse mundo"
+    - " &7O Efeito &ePressa II &7é aplicado a você aqui"
+    - " "
+  WorldLeave:
+    - "&aVocê saiu do mundo de mineração."
+
+  AlreadyInWorld:
+    - "&cVocê já está no mundo de mineração."
+
+  NotInWorld:
+    - "&cVocê não está no mundo de mineração."
